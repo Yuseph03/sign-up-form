@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 900px){
+    body {flex-wrap: wrap;}
+    .image-container {display: none;}
+}
+
+@media screen and (max-width: 440px){
+    form {    display: flex;    }
+}
+
+.top-text {
+    margin: 0 4rem 3rem 3rem;
+    font-size: x-large;
+}
+
+.form-container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 3rem;
+}
+
+.form-container p {
+    font-size: x-large;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form label {
+    display: flex;
+
+    font-size: small;
+    margin-top: 15px;
+}
+
+button {
+    margin: 3rem 0 0 3rem;
+    height: 40px;
+    width: 170px;
+
+    border: 0;
+    border-radius: 5px;
+    font-size: medium;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    background-color: #f8d855;
+}
+
+.login {
+    margin: 2rem 0 0 3rem;
+}
+
+.image-container {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.main-img {
+    margin: 0;
+    width: 40vw;
+    height: 70vw;
+    
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.logo-container {
+   position: absolute;
+   top: 20%;
+   left: 0%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 100%;
+   height: 150px;
+   background-color: rgba(15, 15, 15, 0.8);
+}
+
+.logo-container span {
+    color: white;
+    font-size: 60px;
+    font-family:  'Orbitron', sans-serif;
+}
+
